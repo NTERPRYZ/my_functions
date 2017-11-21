@@ -72,18 +72,21 @@ def test_multiply()
 
   #Given the length of a side of a cube calculate the volume
   def test_volume_of_cube()
-    volume_of_cube = cube_length(3)
+    volume_of_cube = cube_length( 3 )
     assert_equal( 27, volume_of_cube)
   end
 
   #Given the radius of a sphere calculate the volume
   def test_volume_of_sphere()
+    volume = volume_of_sphere( 5 )
+    assert_equal(523.5987755982989, volume)
 
   end
 
-  #Given a value in farenheit, convert this into celsius.
+  #Given a value in farenheit, convert this into celsius. Deduct 32, then multiply by 5, then divide by 9
   def test_fahrenheit_to_celsius()
-    #add test code here
+    celsius = farenheit_to_celsius( 100.00004 )
+    assert_equal(37.7778, celsius)
   end
 
 end

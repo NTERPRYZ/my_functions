@@ -85,6 +85,21 @@ def number_to_short_month_name(number)
   end
 end
 
+def cube_length(number)
+  return number*number*number
+
+end
+
+
+def volume_of_sphere(radius)
+  return (4.0 / 3.0) * Math::PI * (radius ** 3)
+end
+
+
+def farenheit_to_celsius(farenheit)
+  return (farenheit - 32.0) * 5.0 / 9.0
+end
+
 # def population_density(population, area)
 #   return population / area
 # end
